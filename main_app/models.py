@@ -16,7 +16,6 @@ class post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE )
     label = models.ForeignKey(Label , on_delete=models.CASCADE)
     photo = models.ImageField(upload_to='post_images/' , null=True)
-    preview_text = models.TextField(max_length=118 , default='preview_text')
     body = RichTextField()
     created_at = jmodels.jDateTimeField(auto_now_add=True)
     def __str__(self):
