@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
-from .models import post, Like , Label
+from .models import post,  Label
 from django.conf import settings
 from django.contrib.auth.models import User
 from core.settings import MEDIA_ROOT, MEDIA_URL
