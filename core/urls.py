@@ -10,8 +10,6 @@ urlpatterns = [
     path('label/<str:label_text>/', label , name='label'),
     path('blog/<int:posts_pk>/', posts , name='post'),
     path('author/<str:name>/' , author,name='author')
-    # path('save/' ,save, name='save' ),
-    # path('Contact_us/' ,CooperationRequest_page , name='form' )
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
